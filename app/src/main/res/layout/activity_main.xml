@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="État : En attente"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="15dp"/>
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/displayImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Aperçu de l'image"/>
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Charger via Thread"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/computeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exécuter AsyncTask"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afficher Notification"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
